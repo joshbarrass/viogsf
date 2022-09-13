@@ -11,3 +11,5 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/vbam/apu/*.h ${PROJECT_SOURCE_DIR}/vbam/
 
 # build library
 add_library(viogsf STATIC ${sources} ${headers})
+set_property(TARGET viogsf PROPERTY POSITION_INDEPENDENT_CODE ON)
+
