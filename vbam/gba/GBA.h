@@ -330,7 +330,8 @@ struct GBASystem
     float soundFiltering;    // 0.0 = none, 1.0 = max
     long  soundSampleRate;
 
-    u16   soundFinalWave [1600];
+    #define SOUND_BUFFER_SIZE 1600
+    u16   soundFinalWave [SOUND_BUFFER_SIZE];
     bool  soundPaused;
 
     enum { SOUND_CLOCK_TICKS_ = 167772 }; // 1/100 second
