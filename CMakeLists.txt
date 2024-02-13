@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
+set(CMAKE_C_FLAGS_RELEASE "-O3 -DNDEBUG")
 
 # add sources and headers
 file(GLOB sources ${PROJECT_SOURCE_DIR}/vbam/apu/*.cpp ${PROJECT_SOURCE_DIR}/vbam/gba/*.cpp)
